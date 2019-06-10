@@ -1,0 +1,513 @@
+/* 
+  Template: Jwellery html template
+  Author: Sifayet Ullah
+  Version: 1.00
+
+    Table Of Contents
+===========================
+    1. header section
+       - navigation link
+       - banner section
+    2. history section
+    3. work section
+    4. mercury section
+    5. about section
+    6. customers section
+    7. gallery section
+    8. footer section
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#mynav ul li a,
+.banner_text a {
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 48px;
+  color: #464646;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #464646;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+p {
+  color: #b7b7b7;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.section_heading {
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section_heading img {
+  margin: 20px 0;
+}
+
+/* header section css start */
+/* navigation link css start */
+.customnav {
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 0;
+}
+
+.fixed {
+  background: #141414;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.customnav .navbar-toggler {
+  border: 2px solid #fff;
+}
+
+.customnav .navbar-toggler:hover {
+  border-color: #a6a6a6;
+}
+
+.customnav .navbar-toggler i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.navbar-light .navbar-toggler:hover i {
+  color: #a6a6a6;
+}
+
+#mynav ul li a {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#mynav ul li a:hover {
+  color: #a6a6a6;
+}
+
+#mynav ul li .inner_link {
+  margin-left: 25px;
+}
+
+#mynav ul li:nth-child(5) {
+  margin-right: 25px;
+}
+
+#mynav ul li i {
+  margin: 0;
+  margin-left: 5px;
+}
+
+/* navigation link css end */
+
+/* banner section css start */
+#banner {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.1))), url(../images/banner.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url(../images/banner.jpg);
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center !important;
+  height: 100vh;
+  position: relative;
+}
+
+.banner_text {
+  color: #fff;
+  max-width: 600px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.banner_text p {
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.banner_text h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 21px;
+}
+
+.banner_text a {
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 0px;
+  padding: 24px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  margin-top: 45px;
+  margin-right: 21px;
+  letter-spacing: 1px;
+}
+
+.banner_text a:hover {
+  background: #e92121;
+  border: 2px solid #e92121;
+}
+
+@media (max-width: 991px) {
+  .banner_text {
+    text-align: center;
+    margin: auto;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+}
+
+/* banner section css end */
+/* header section css end */
+
+/* history section css start */
+#history {
+  padding: 50px 0;
+}
+
+.history_right_part p {
+  margin: 45px 0;
+}
+
+/* history section css end */
+
+/* work section css start */
+#work {
+  border-top: 1px solid #f1f1f1;
+  padding: 95px 0;
+}
+
+.work_text {
+  margin-top: 50px;
+}
+
+.work_item {
+  margin-top: 78px;
+}
+
+.work_item h4 {
+  margin: 28px 0 22px 0;
+}
+
+/* work section css end */
+
+/* mercury section css start */
+#mercury {
+  background: #faf9f9;
+  padding: 110px 0;
+}
+
+.mercury_text {
+  text-align: left;
+}
+
+.mercury_text a {
+  color: #fff;
+  border: 2px solid #e92121;
+  background: #e92121;
+  border-radius: 0px;
+  padding: 24px 42px;
+  font-weight: 700;
+  font-size: 16px;
+  display: inline-block;
+  letter-spacing: 1px;
+  margin-top: 32px;
+}
+
+/* mercury section css end */
+
+/* about section css start */
+#about {
+  padding: 95px 0;
+}
+
+.about_text {
+  margin: 0 0 60px 0;
+}
+
+.about_item {
+  margin: 35px 0;
+}
+
+.about_item h4 {
+  margin-bottom: 15px;
+}
+
+.ab_sec_h_info,
+.gal_sec_h_info {
+  position: relative;
+}
+
+.ab_sec_h_info img,
+.gal_sec_h_info img {
+  position: absolute;
+}
+
+.ab_sec_p_info {
+  margin-top: 50px;
+}
+
+/* about section css end */
+
+/* customer section css start */
+#customer {
+  background: #faf9f9;
+  padding: 75px 0;
+}
+
+.customer_item {
+  margin-top: 84px;
+}
+
+.customer_item .customer_item_img {
+  text-align: right;
+}
+
+.customer_title {
+  font-size: 14px;
+  padding: 8px 0;
+}
+
+.customer_heading p {
+  max-width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+/* customer section css end */
+
+/* gallery section css start */
+#gallery {
+  margin: 100px 0;
+}
+
+/* gallery section css end */
+
+/* footer section css start */
+footer {
+  background: #141414;
+  padding: 68px 0;
+}
+
+footer h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.social,
+.owner_info {
+  text-align: right;
+}
+
+.social a {
+  margin: 0 5px;
+}
+
+.social i {
+  color: #474747;
+  font-size: 25px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.social i:hover {
+  color: #fff;
+}
+
+.footer_bottom {
+  margin-top: 65px;
+}
+
+.footer_bottom ul li {
+  margin-top: 10px;
+}
+
+.footer_bottom ul li a {
+  color: #b7b7b7;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.footer_bottom ul li a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+@media (max-width: 575px) {
+
+  .footer_top,
+  .social,
+  .footer_bottom,
+  .owner_info {
+    text-align: center;
+  }
+
+  .social {
+    margin-top: 30px;
+  }
+
+  .footer_link {
+    margin-top: -20px;
+    ;
+  }
+
+  .owner_info {
+    margin-top: 30px;
+  }
+}
+
+/* footer section css end */
+
+/* backto top button */
+.backtotop {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #464646;
+  cursor: pointer;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+}
+
+.backtotop i {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+/* media query */
+
+@media (max-width: 767px) {
+  #mynav ul {
+    margin-top: 15px;
+  }
+
+  #mynav ul li .inner_link {
+    margin-left: 0px;
+  }
+
+  .banner_text a {
+    margin: 35px 10px;
+  }
+
+  #history {
+    padding-bottom: 0px;
+  }
+
+  .history_left_part h2,
+  .about_left_part h2,
+  .work_item,
+  #mercury,
+  .mercury_text,
+  .about_item,
+  .ab_sec_h_info h2,
+  .gal_sec_h_info h2 {
+    text-align: center;
+  }
+
+  #work,
+  #mercury {
+    padding: 60px 0;
+  }
+
+  .work_text,
+  .about_right_part {
+    margin-top: 20px;
+  }
+
+  .mercury_text {
+    margin-top: 50px;
+  }
+
+  .ab_sec_h_info,
+  .gal_sec_h_info {
+    margin-top: 45px;
+  }
+
+  .ab_sec_h_info h2,
+  .gal_sec_h_info h2 {
+    margin: auto;
+  }
+
+  .ab_sec_h_info img,
+  .gal_sec_h_info img {
+    top: 60px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+@media (min-width: 768px) {
+  .history_left_part {
+    max-width: 300px;
+  }
+
+  .about_left_part h2 {
+    max-width: 250px;
+  }
+
+  .ab_sec_h_info {
+    max-width: 250px;
+    padding-left: 18px !important;
+  }
+
+  .gal_sec_h_info {
+    padding-left: 18px !important;
+  }
+
+  .gal_sec_h_info h2 {
+    max-width: 300px;
+  }
+}

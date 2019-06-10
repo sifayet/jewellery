@@ -1,0 +1,68 @@
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .banner_text a,
+  .mercury_text a {
+    padding: 15px 30px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+
+  .banner_text a,
+  .mercury_text a {
+    padding: 15px 30px;
+  }
+
+  .history_left_part h2,
+  .about_left_part h2,
+  .ab_sec_h_info h2,
+  .gal_sec_h_info h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 575px) {
+
+  .banner_text a,
+  .mercury_text a {
+    padding: 10px 20px;
+  }
+
+  .history_left_part h2,
+  .about_left_part h2,
+  .ab_sec_h_info h2,
+  .gal_sec_h_info h2 {
+    font-size: 35px;
+  }
+
+  .work_item {
+    margin-top: 65px;
+  }
+}
+
+@media (max-width: 479px) {
+
+  .banner_text a,
+  .mercury_text a {
+    padding: 10px 20px;
+  }
+
+  .history_left_part h2,
+  .about_left_part h2,
+  .ab_sec_h_info h2,
+  .gal_sec_h_info h2 {
+    font-size: 28px;
+  }
+
+  .work_item {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 377px) {
+  .banner_text a {
+    margin: 10px 10px;
+  }
+}
